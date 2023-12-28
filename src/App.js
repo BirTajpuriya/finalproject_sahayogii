@@ -29,6 +29,8 @@ import { loadUser } from './redux/actions/user';
 import { ProtectedRoute } from 'protected-route-react';
 import Loader from './components/Layout/Loader/Loader';
 
+import Homevideo from './components/videocall/Homevideo';
+import Room from './components/videocall/Room';
 function App() {
   window.addEventListener('contextmenu', e => {
     e.preventDefault();
@@ -78,6 +80,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/request" element={<Request />} />
             <Route path="/about" element={<About />} />
+            <Route path="/videocall" element={<Homevideo />} />
+            <Route path="/room/:roomID" element={<Room />} />
 
             <Route
               path="/profile"

@@ -30,12 +30,11 @@ const CreateCourse = () => {
   const { loading, error, message } = useSelector(state => state.admin);
 
   const categories = [
-    'Web development',
-    'Artificial Intellegence',
-    'Data Structure & Algorithm',
-    'App Development',
-    'Data Science',
-    'Game Development',
+    'Vastu Consultancy',
+    'Engineering Consultancy',
+    'Vastu 1',
+    'Vastu 2',
+    'others',
   ];
 
   const changeImageHandler = e => {

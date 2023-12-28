@@ -55,7 +55,7 @@ const Course = ({
         />
       </HStack>
 
-      <Heading
+      {/* <Heading
         textAlign={'center'}
         size="xs"
         children={`Lectures - ${lectureCount}`}
@@ -66,20 +66,20 @@ const Course = ({
         size="xs"
         children={`Views - ${views}`}
         textTransform="uppercase"
-      />
+      /> */}
 
       <Stack direction={['column', 'row']} alignItems="center">
         <Link to={`/course/${id}`}>
-          <Button colorScheme={'yellow'}>Watch Now</Button>
+          <Button colorScheme={'yellow'}>More Detail</Button>
         </Link>
-        <Button
+        {/* <Button
           isLoading={loading}
           variant={'ghost'}
           colorScheme={'yellow'}
           onClick={() => addToPlaylistHandler(id)}
         >
           Add to playlist
-        </Button>
+        </Button> */}
       </Stack>
     </VStack>
   );
@@ -96,10 +96,10 @@ const Courses = () => {
   };
 
   const categories = [
-    'Web development',
-    'Artificial Intellegence',
-    'Data Structure & Algorithm',
-    'App Development',
+    'Vastu Consultancy',
+    'Engineering Consultancy',
+    'Vastu 1',
+    'Vastu 2',
     'Data Science',
     'Game Development',
   ];
@@ -124,12 +124,12 @@ const Courses = () => {
 
   return (
     <Container minH={'95vh'} maxW="container.lg" paddingY={'8'}>
-      <Heading children="All Courses" m={'8'} />
+      <Heading children="Our Service" m={'8'} />
 
       <Input
         value={keyword}
         onChange={e => setKeyword(e.target.value)}
-        placeholder="Search a course..."
+        placeholder="Search ..."
         type={'text'}
         focusBorderColor="yellow.500"
       />

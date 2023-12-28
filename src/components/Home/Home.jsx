@@ -81,7 +81,6 @@ const Home = () => {
 
       <div className="container2">
         <video
-          autoPlay
           loop
           controls
           controlsList="nodownload nofullscreen noremoteplayback"

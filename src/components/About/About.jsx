@@ -86,7 +86,7 @@ const About = () => {
         children="Refund only applicable within 7 days"
       />
       {/* terms ends here */}
-      <HStack my="4" p={'4'}>
+      {/* <HStack my="4" p={'4'}>
         <RiSecurePaymentFill />
         <Heading
           size={'xs'}
@@ -94,7 +94,7 @@ const About = () => {
           textTransform={'uppercase'}
           children={'Payment is secured by Razorpay'}
         ></Heading>
-      </HStack>
+      </HStack> */}
     </Container>
   );
 };
